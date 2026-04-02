@@ -165,8 +165,13 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2rem, 6vw, 3.4rem);
-  max-width: 16ch;
+  font-size: clamp(1.65rem, 4.2vw, 2.65rem);
+  max-width: 44ch;
+}
+
+.hero-title-line2 {
+  display: block;
+  margin-top: 0.28em;
 }
 
 .hero-subtitle {
@@ -174,6 +179,12 @@ h1 {
   color: #d8e5f6;
   font-size: clamp(1rem, 2vw, 1.15rem);
   max-width: 36ch;
+}
+
+.hero-emphasis {
+  white-space: nowrap;
+  font-weight: 600;
+  color: #eaf2ff;
 }
 
 .hero-cta-group {
@@ -222,8 +233,65 @@ h1 {
   padding: clamp(1.3rem, 3vw, 2rem);
 }
 
-.price-card h2 {
+.price-card h2,
+.price-headline {
   font-size: clamp(1.35rem, 3vw, 2rem);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 0.38rem;
+  row-gap: 0.35rem;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.price-headline-line {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  max-width: 100%;
+}
+
+.price-headline-text {
+  flex: 0 1 auto;
+}
+
+.price-per-cesto {
+  font-size: 0.92em;
+  font-weight: 600;
+  color: var(--blue);
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  margin-left: 0.38em;
+}
+
+.cesto-icon {
+  width: clamp(44px, 10vw, 56px);
+  height: clamp(44px, 10vw, 56px);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.price-delivery-note {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  max-width: 65ch;
+}
+
+.price-delivery-text {
+  flex: 0 1 auto;
+}
+
+.delivery-van-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
 }
 
 .price-card p {
@@ -356,6 +424,12 @@ h1 {
   border-radius: var(--radius);
   background: linear-gradient(180deg, rgba(18, 27, 38, 0.98), rgba(14, 22, 32, 0.98));
   border: 1px solid rgba(78, 163, 255, 0.2);
+  text-align: center;
+}
+
+.contact-info .address-note {
+  max-width: 26rem;
+  margin-inline: auto;
 }
 
 .contact-info p {
@@ -367,6 +441,10 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
+}
+
+.social-buttons-centered {
+  justify-content: center;
 }
 
 .social-icon {
