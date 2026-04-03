@@ -8,6 +8,8 @@
       content="Lavanderia express de autosserviço premium em Curitiba."
     />
     <title>Lavateria Express | Autosserviço Premium</title>
+    <link rel="icon" href="./assets/icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./assets/icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,10 +28,16 @@
             alt="Logo Lavateria Express"
           />
         </a>
-        <div class="nav-links">
-          <a href="#preco">Preço</a>
-          <a href="#planos">Planos</a>
-          <a href="#contato">Contato</a>
+        <div class="nav-actions">
+          <div class="nav-links">
+            <a href="#preco">Preço</a>
+            <a href="#planos">Planos</a>
+            <a href="#contato">Contato</a>
+          </div>
+          <div class="nav-hours" aria-label="Horário de atendimento">
+            <span class="nav-hours-line">Seg a sex: 9h às 17h30</span>
+            <span class="nav-hours-line">Sáb: 9h às 16h</span>
+          </div>
         </div>
       </nav>
     </header>
@@ -38,7 +46,7 @@
       <section id="hero" class="hero section">
         <div class="hero-overlay"></div>
         <div class="container hero-content reveal">
-          <p class="eyebrow">Autosserviço Premium • Curitiba</p>
+          <p class="eyebrow">Autosserviço Premium • Bigorrilho</p>
           <h1>
             Traga suas roupas e nós lavamos e secamos para você.
             <span class="hero-title-line2"
@@ -95,14 +103,15 @@
         </div>
       </section>
 
-      <section id="planos" class="section">
+      <section id="planos" class="section section-plans">
         <div class="container">
           <div class="section-title reveal">
             <p class="eyebrow">Economia inteligente</p>
             <h2>Conheça nossos planos</h2>
           </div>
 
-          <div class="plans-grid">
+          <div class="plans-stage">
+            <div class="plans-grid">
             <a class="card plan-card reveal" href="#contato" aria-label="Escolher plano Single e ir para contato">
               <div class="plan-header">
                 <h3>Single</h3>
@@ -156,6 +165,7 @@
                 </p>
               </div>
             </a>
+            </div>
           </div>
         </div>
       </section>
@@ -183,8 +193,8 @@
               >
             </div>
             <p class="address-note">
-              Rua Padre Anchieta 2454 - loja 38 - sobreloja.
-              Edifício Westcenter Comercial - CEP 80730-000
+              Rua Padre Anchieta, 2454 — loja 38, Curitiba, Brasil 
+              CEP 80730-000
             </p>
           </div>
 
